@@ -1,0 +1,29 @@
+<div>
+    <ul ng-repeat="pageNumber in pages" class="pagination">
+        <li><a href="javascript:void(0)" ng-click="getRecordsByPage(pageNumber)">{{pageNumber}}</a></li>
+    </ul>
+</div>
+
+<div>
+    <ul class="pager">
+        <li><a href="javascript:void(0)" ng-click="prePage()">Previous</a></li>
+        <li><a href="javascript:void(0)" ng-click="nextPage()">Next</a></li>
+    </ul>
+</div>
+
+
+<table>
+    <thead>
+    <tr>
+        <th>Id</th><th>Title</th><th>Photo</th>
+    </tr>
+    </thead>
+    <tbody ng-repeat="photo in filteredPhotos">
+    <tr>
+        <td>{{photo.id}}</td>
+        <td>{{photo.title}}</td>
+        <td><img src="{{photo.thumbnailUrl}}"/></td>
+
+    </tr>
+    </tbody>
+</table>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Angular AJAX</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="App/app.js"></script>
+</head>
+<body>
+<div ng-controller="sampleController" class="container">
+
+    <div class="dropdown pull-right">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+            Items per Page
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#/home/10">10</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#/home/50">50</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#/home/100">100</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#/home/500">500</a></li>
+        </ul>
+    </div>
+
+    <div ng-view>
+
+    </div>
+
+
+
+</div>
+
+
+</body>
+</html>
